@@ -1,8 +1,318 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <script src="script.js"></script>
+        <!--W3.CSS-->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!--Bootstrap 5-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     </head>
-    <body>
-    <p>Hello World!</p>
-    </body>
-</html>
+    <body class="w3-black" style="box-sizing: border-box;">
+      <style>
+        header {
+          display: block;
+        }
+        header.masthead {
+            text-align: center;
+            color: black;
+            background-image: url('https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462434_1280.jpg');
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center;
+            background-position-x: center;
+            background-position-y: center;
+            background-size: cover;
+        }
+        header.masthead .intro-text .intro-heading {
+            font-size: 75px;
+            font-weight: 700;
+            line-height: 75px;
+            margin-bottom: 50px;
+        }
+        header.masthead .intro-text .intro-lead-in {
+            font-size: 40px;
+            font-style: italic;
+            line-height: 40px;
+            margin-bottom: 25px;
+        }
+        header.masthead .intro-text {
+            padding-top: 300px;
+            padding-bottom: 200px;
+        }
+        .btn-primary {
+            background-color: #edd37c;
+            border-color: #edd37c;
+        }
+        .btn-xl {
+            font-size: 18px;
+            padding: 20px 40px;
+        }
+        .btn {
+            font-weight: 700;
+            background-color: #edd37c;
+            border-color: #edd37c;
+        }
+        .text-uppercase {
+            text-transform: uppercase!important;
+        }
+        section {
+            padding: 150px 0;
+            display: block;
+        }
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 1140px;
+        }
+        .row {
+            display: '-ms-flexbox';
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+        .text-center {
+            text-align: center!important;
+        }
+        .col-lg-12 {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .col-lg-12 {
+            position: relative;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        ul {
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+        ul {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }   
+        </style>
+      
+      <div class="w3-top">
+      <div class="w3-bar w3-card-4 w3-black w3-large btn-5">
+        <a href="#home" class="w3-bar-item w3-button btn-5">Home</a>
+        <a href="#about" class="w3-bar-item w3-button btn-5">About Me</a>
+        <a href="#projects" class="w3-bar-item w3-button btn-5">Projects</a>        
+      </div>
+      </div>
+      
+      <!--Header-->
+      <header id="home" class="masthead">
+        <div class="w3-display-left w3-container">
+          <!-- Text Box
+          <span class="w3-tag w3-xlarge w3-padding w3-green w3-animate-fading" style="transform:rotate(-5deg)">
+            Happy Holidays!
+          </span>
+        -->
+        </div>
+        <div class="container w3-animate-zoom">
+          <div class="intro-text">
+            <div class="intro-lead-in">Meet Eric</div>
+            <hr style="border: 3px solid yellow;">
+              <div class="intro-heading text-uppercase">Aspiring Software Developer</div>
+                <a class="btn btn-xl text-uppercase js-scroll-trigger button--secondary"  href="#about"><span class="text">Find Out More</span><span class="button"></span></a>
+          </div>
+        </div>
+      </header>
+
+      <div id="about" class="container">
+        <center>
+          <h1 id="aboutme" class="display-3">About Me</h1>
+        </center>
+
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-4">
+              <h1 class="display-6">Information</h1>
+              <p>I am looking to use the workforce as a means of gaining valuable experience and knowledge to make the world a better place. Computer science opens the door for many possibilities!</p>
+            </div>
+
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title display-6">Attribute 1</h5>
+                  <p class="card-text">Sample text</p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title display-6">Attribute 2</h5>
+                  <p class="card-text">Sample text</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title display-6">Attribute 3</h5>
+                  <p class="card-text">Sample text</p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title display-6">Attribute 4</h5>
+                  <p class="card-text">Sample text</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <center>
+            <h1 id="skills" class="display-6">Skills</h1>
+          </center>
+
+          <div class="row">
+              <div class="col-3">
+                <ul class="list-group">
+                  <li class="list-group-item justify-content-between align-items-center" style="background-color: #333;">
+
+                  </li>
+                </ul>
+              </div>
+              <div class="col-3">
+                <ul class="list-group">
+                  <li class="list-group-item justify-content-between align-items-center" style="background-color: #333;">
+
+                  </li>
+                </ul>
+              </div>
+                
+              <div class="col-3">
+                <ul class="list-group">
+                  <li class="list-group-item justify-content-between align-items-center" style="background-color: #333;">
+
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-3">
+                <ul class="list-group">
+                  <li class="list-group-item justify-content-between align-items-center" style="background-color: #333;">
+
+                  </li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+          
+          <div class="row">
+            <div class="col-3">
+              <ul class="list-group">
+                <li class="list-group-item justify-content-between align-items-center" style="background-color: #333;">
+
+                </li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <ul class="list-group">
+                <li class="list-group-item justify-content-between align-items-center" style="background-color: #333;">
+
+                </li>
+              </ul>
+            </div>
+              
+            <div class="col-3">
+              <ul class="list-group">
+                <li class="list-group-item justify-content-between align-items-center" style="background-color: #333;">
+
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-3">
+              <ul class="list-group">
+                <li class="list-group-item justify-content-between align-items-center" style="background-color: #333;">
+
+                </li>
+              </ul>
+            </div>
+          </ul>
+        </div>
+
+        <div id="showcase" class="container">
+          <center>
+            <h1 id="projects" class="display-3">Sample Projects</h1>
+          </center>
+
+          <div id="captions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#captions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#captions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#captions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Project 1 Name</h5>
+                  <p>Project 1 Description</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Project 2 Name</h5>
+                  <p>Project 2 Description</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Project 3 Name</h5>
+                  <p>Project 3 Description</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#captions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#captions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <footer>
+        <div class="w3-container" style="margin-top: 0px;">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <h3 id="footerTitle" class="section-subheading">Thank you for visiting!</h3>
+            </div>
+          </div>
+        <section id="credits" class="w3-container">
+        <div class="w3-container">
+
+        <p style="border-top: 0.5px solid white;">Powered by <a style="text-decoration: none; color: white" href="https://www.w3schools.com/">W3schools</a>, <a style="text-decoration: none; color: white;" href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">Bootstrap 5</a> and <a style="text-decoration: none; color: white;" href="https://pages.github.com/">GitHub Pages</a></p>
+        <!--Make a ToolTip For Image Attribution-->
+        <p><a href="https://pixabay.com/illustrations/background-abstract-line-2462434/">Header Image Attribution: Free To Use From Pixabay</a></p>
+        <br>
+      
+        </div>
+        </section>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        </body>
+      </html>
