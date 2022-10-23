@@ -22,50 +22,17 @@
   margin-top: 20px;
   margin-bottom: 10px;
 }
+.card:hover {
+  transform: scale(1.05);
+}
 .card-body {
   background-color: #333;
-}
-/*Trigger Code*/
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none;
-  background-color: #fff;
-  border: .05rem solid #fff;
-}
-#page {
-  visibility: hidden;
-}
-#reveal-effect {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-}
-body {
-  background: #fff;
-}
-body.loaded {
-  background-color: #333333;
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
-}
-body.loaded #page {
-  visibility: visible;
-}
-body.loaded #reveal-effect {
-  opacity: 1;
-}
-body.revealed #reveal-effect {
-  display: none;
 }
 /*Button Animation*/
 *, :after, :before {
   box-sizing: border-box;
 }
-.button--secondary .button:after {
+.button .button:after {
   content: "";
   display: inline-block;
   background-color: #7dc1c4;
@@ -75,8 +42,8 @@ body.revealed #reveal-effect {
   height: 2px;
   top: 4px;
 }
-.button--secondary:hover {
-   animation: button-animation .33s cubic-bezier(0,0,.2,1);
+.button:hover {
+   animation: button-animation .33s;
    background-color: #7dc1c4;
 }
 @keyframes button-animation {
@@ -92,20 +59,15 @@ body.revealed #reveal-effect {
     background-color: #7dc1c4;
   } 
 }
-.button--secondary:hover:before {
+.button:hover:before {
   transform: scale(1);
   opacity: 1;
 }
-.button--secondary:hover .text {
+.button:hover .text {
   transform: translateX(21px);
 }
-.button--secondary:hover .button {
+.button:hover .button {
   transform: translateX(30px) scale(.8);
-  opacity: 0;
-}
-/*Fade Animation*/
-#fadein-trigger > div {
-  height: 400px;
   opacity: 0;
 }
 /*NavBar Fade Button*/
