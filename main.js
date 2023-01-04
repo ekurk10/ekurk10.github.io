@@ -10,6 +10,9 @@ console.log("test5");
 import * as YUKA from "yuka"; // Imports Yuka
 console.log("test6");
 
+export default THREE;
+export default YUKA;
+
 //Creates a new Three.js scene
 const scene = new THREE.Scene();
 
