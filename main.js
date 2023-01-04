@@ -1,8 +1,8 @@
-import * as THREE from "three"; // Imports Three.js
+import * as THREE from "https://threejs.org/build/three.module.js"; // Imports Three.js
 import {OrbitControls} from "https://threejs.org/examples/jsm/controls/OrbitControls.js"; //Imports Camera Controls
 import {FontLoader} from "https://threejs.org/examples/jsm/loaders/FontLoader.js"; //Imports Font Loader to load fonts
 import {TextGeometry} from "https://threejs.org/examples/jsm/geometries/TextGeometry.js"; // Imports TextGeometry to display fonts
-import * as YUKA from "yuka"; // Imports Yuka
+import * as YUKA from "https://mugen87.github.io/yuka/build/yuka.module.js"; // Imports Yuka
 
 //Creates a new Three.js scene
 const scene = new THREE.Scene();
