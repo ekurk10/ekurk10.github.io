@@ -1,8 +1,14 @@
+console.log("test1");
 import * as THREE from "https://cdn.skypack.dev/three@0.148.0/build/three.module.js"; // Imports Three.js
+console.log("test2");
 import {OrbitControls} from "https://cdn.skypack.dev/three@0.148.0/examples/jsm/controls/OrbitControls.js"; //Imports Camera Controls
+console.log("test3");
 import {FontLoader} from "https://cdn.skypack.dev/three@0.148.0/examples/jsm/loaders/FontLoader.js"; //Imports Font Loader to load fonts
+console.log("test4");
 import {TextGeometry} from "https://cdn.skypack.dev/three@0.148.0/examples/jsm/geometries/TextGeometry.js"; // Imports TextGeometry to display fonts
+console.log("test5");
 import * as YUKA from "https://cdn.skypack.dev/yuka@0.7.8/build/yuka.module.js"; // Imports Yuka
+console.log("test6");
 
 //Creates a new Three.js scene
 const scene = new THREE.Scene();
