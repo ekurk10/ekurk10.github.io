@@ -1,5 +1,5 @@
 console.log("test1");
-import defaultExport, * as THREE from "three"; // Imports Three.js
+import * as THREE from "three"; // Imports Three.js
 console.log("test2");
 import {OrbitControls} from "three/addons/controls/OrbitControls.js"; //Imports Camera Controls
 console.log("test3");
