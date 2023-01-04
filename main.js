@@ -1,14 +1,8 @@
-console.log("test1");
 import * as THREE from "three"; // Imports Three.js
-console.log("test2");
 import {OrbitControls} from "three/addons/controls/OrbitControls.js"; //Imports Camera Controls
-console.log("test3");
 import {FontLoader} from "three/addons/loaders/FontLoader.js"; //Imports Font Loader to load fonts
-console.log("test4");
 import {TextGeometry} from "three/addons/geometries/TextGeometry.js"; // Imports TextGeometry to display fonts
-console.log("test5");
 import * as YUKA from "yuka"; // Imports Yuka
-console.log("test6");
 
 export default THREE;
 
@@ -28,7 +22,7 @@ scene.add(sphere);
 //Creates and loads the text that will be displayed
 const loader = new FontLoader();
 
-loader.load("node_modules/three/examples/fonts/droid/droid_serif_regular.typeface.json", function (droidFont) {
+loader.load("https://unpkg.com/three@0.148.0/examples/fonts/droid/droid_serif_regular.typeface.json", function (droidFont) {
 
 	const textGeometry = new TextGeometry("Meet Eric", {
 		font: droidFont,
@@ -46,7 +40,7 @@ loader.load("node_modules/three/examples/fonts/droid/droid_serif_regular.typefac
 
 const loader2 = new FontLoader();
 
-loader2.load("node_modules/three/examples/fonts/droid/droid_serif_regular.typeface.json", function (droidFont) {
+loader2.load("https://unpkg.com/three@0.148.0/examples/fonts/droid/droid_serif_regular.typeface.json", function (droidFont) {
 
 	const geometry = new TextGeometry("Aspiring Software Developer", {
 		font: droidFont,
