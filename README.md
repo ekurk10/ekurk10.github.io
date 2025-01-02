@@ -1,5 +1,7 @@
 # Eric's Personal Website
 
+The site is unfinished still!
+
 Thank you for visiting!
 
 While the source code is available on GitHub for your viewing, I kindly ask that you do not reproduce or distribute this project without my permission.
